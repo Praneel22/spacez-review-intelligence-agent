@@ -1,48 +1,111 @@
-# spacez-review-intelligence-agent
+# Spacez AI Review Intelligence Agent
 
-# Spacez Review Intelligence Agent
+Spacez receives guest reviews across Airbnb, Booking.com, and Google.
 
-AI-powered review intelligence system for hospitality properties.
+The challenge is not collecting reviews but converting them into actions.
 
-## Problem
+Different stakeholders need different outputs:
 
-Guest reviews are scattered across Airbnb, Booking.com, and Google, making it difficult for Operations, Business, and Caretaker teams to identify actionable insights.
+- Operations
+- Business
+- Caretakers
 
-## Solution
+Most review tools stop at sentiment analysis.
 
-An AI-powered dashboard that:
+This project focuses on accountability routing and action generation.
 
-- Consolidates reviews
-- Identifies recurring issues
-- Assigns accountability
-- Routes insights to relevant stakeholders
+## Live Prototype
 
-## Stakeholders
-
-1. Operations
-2. Business
-3. Caretakers
-
-## Key Insights
-
-- Pool maintenance issues at Serenity Villa
-- Heating issues at Cliffside Retreat
-- WiFi issues at Hilltop Haven
-- Check-in delays linked to caretaker patterns
-
-## Prototype
-
-Live Demo:
 https://spacez-whisperer.lovable.app
 
-## Tech Stack
+Built as part of the Spacez AI Product Associate assessment.
 
-- Lovable
-- AI-assisted prototyping
-- Hospitality review analytics
+Objective:
+Design an AI-powered review intelligence system that converts guest reviews into stakeholder-specific actions.
 
-## Future Improvements
+## Key Insight
 
-- Automated ticket creation
-- Predictive issue detection
-- Multi-platform review ingestion
+Not every negative review should be sent to the caretaker.
+
+Examples:
+
+WiFi failure → Operations
+
+Pool maintenance → Operations
+
+Misleading listing photos → Business
+
+Check-in delays → Caretaker
+
+The system first identifies ownership before routing feedback.
+
+## AI Workflow
+
+Reviews
+↓
+Normalization
+↓
+Sentiment Detection
+↓
+Issue Extraction
+↓
+Root Cause Classification
+↓
+Stakeholder Routing
+↓
+Action Recommendation
+
+## Stakeholder Outputs
+
+### Operations
+- Maintenance issues
+- Cleanliness issues
+- Vendor failures
+
+### Business
+- Reputation risks
+- Listing accuracy
+- Portfolio performance
+
+### Caretakers
+- Check-in experience
+- Communication quality
+- Guest handling
+
+## What Makes This Different
+
+Most review analytics tools answer:
+
+"What happened?"
+
+This system answers:
+
+"Who should act?"
+
+The focus is accountability assignment rather than sentiment reporting.
+
+## Risks
+
+- Sentiment misclassification
+- Incorrect accountability assignment
+- Over-reliance on automation
+- Small review sample sizes
+
+Human review remains part of the workflow.
+
+## Future Roadmap
+
+Phase 1:
+Review Intelligence
+
+Phase 2:
+Stakeholder Routing
+
+Phase 3:
+Caretaker Coaching
+
+Phase 4:
+Predictive Risk Detection
+
+Phase 5:
+Automated Ticket Creation
