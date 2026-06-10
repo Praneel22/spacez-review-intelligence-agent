@@ -33,7 +33,7 @@ An AI-powered dashboard that:
 ## Prototype
 
 Live Demo:
-https://review-glow-up-50.lovable.app
+https://spacez-whisperer.lovable.app
 
 ## Tech Stack
 
